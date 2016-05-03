@@ -12,7 +12,7 @@
       -e          execute the values
       --version   show program's version number and exit
 
-* example usage:
+***example usage:***
     pytomd -o ./README.md -p ./src -e
 
 **********************************************
