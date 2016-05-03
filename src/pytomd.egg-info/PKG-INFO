@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pytomd
+Version: 1.0.1
+Summary: python code to README.md
+Home-page: UNKNOWN
+Author: ian.itow
+Author-email: ian.itow@isilon.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 2.7

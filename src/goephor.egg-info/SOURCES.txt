@@ -1,0 +1,12 @@
+setup.py
+src/goephor.egg-info/PKG-INFO
+src/goephor.egg-info/SOURCES.txt
+src/goephor.egg-info/dependency_links.txt
+src/goephor.egg-info/entry_points.txt
+src/goephor.egg-info/not-zip-safe
+src/goephor.egg-info/requires.txt
+src/goephor.egg-info/top_level.txt
+src/pytomd/__init__.py
+src/pytomd/__main__.py
+src/pytomd/modules/__init__.py
+src/pytomd/modules/engine.py
