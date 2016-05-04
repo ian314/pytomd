@@ -22,15 +22,15 @@
 * all tags within :<anything>: will in become a parameter
 * example tags must go at the end and the code most me contained in 3 back-ticks.
 
-```
+<code>
 def Waldo(var):
 ''' Here is an example of a class <<< explanation
 :param var: This is a parameter   <<< tag
 :example:                         <<< example tag
-``` `
-Some example goes here
-` ```
 ```
+Some example goes here
+```
+</code>
 
 
 
