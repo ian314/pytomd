@@ -25,11 +25,11 @@
 ```
 def Waldo(var):
 ''' Here is an example of a class <<< explanation
-:param var: This is a parameter <<< tag
-:example:
-\```
+:param var: This is a parameter   <<< tag
+:example:                         <<< example tag
+\```                              <<< example block --note: do not add the escape \
 Some example goes here
-\```
+\```                              <<< example block --note: do not add the escape \
 ```
 
 
