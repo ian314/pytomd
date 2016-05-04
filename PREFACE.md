@@ -27,9 +27,9 @@ def Waldo(var):
 ''' Here is an example of a class <<< explanation
 :param var: This is a parameter   <<< tag
 :example:                         <<< example tag
-&#96;&#96;&#96;
+``` `
 Some example goes here
-&#96;&#96;&#96;
+` ```
 ```
 
 
