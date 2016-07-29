@@ -41,106 +41,3024 @@ Some example goes here
 
 **********************************************
 **********************************************
-file @ **/main.py**
+ File @ ***/setup.py***
 
-      None
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
 
 **********************************************
 **********************************************
-file @ **/pytomd/__init__.py**
+ File @ ***/setup.py***
 
-      Modules __init__.py
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
 
 **********************************************
 **********************************************
-file @ **/pytomd/__main__.py**
-
-      Main entry for pytomd
-
- ***def menu*** 
-
-      The Menu is here 
-
- ***def main*** 
-
-      This is used in the cli and from a couple places 
+ File @ ***src/pytomd/__init__.py***
 
 **********************************************
 **********************************************
-file @ **/pytomd/modules/__init__.py**
+ File @ ***/setup.py***
 
-      None
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
 
 **********************************************
 **********************************************
-file @ **/pytomd/modules/engine.py**
+ File @ ***src/pytomd/__init__.py***
 
-      Created on May 2, 2016
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
 
 
-**author:** iitow
+***def menu***: 
 
-####class Scanner####
+The Menu is here
 
-      scans all python files for attributes
-     
+***def main***: 
 
-####class Manager####
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***/setup.py***
 
-      This class manages all files and scanners
-     
 
- ***def __init__*** 
+***def readme***: 
 
-      Scanner Constructor
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
 
-**param base_path:** String, base of git repo
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
 
-**param file:** String, to be parsed
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
 
-**param output:** String, place to put README.md 
 
- ***def get_ast*** 
+***def menu***: 
 
-      Get ast obj tree
-         
+The Menu is here
 
- ***def _scan*** 
+***def main***: 
 
-      Performs the scan & adds markdown
-         
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
 
- ***def bold*** 
 
-      Bolds params and attribs
+***class File***: 
 
-**param line:** String
+Represents a python file
 
-**param:** regex: raw String 
+***class Data***: 
 
- ***def __init__*** 
+Represents classes, defs of a python file
 
-      Manager Constructor
+***def __init__***: 
 
-**param path:** String
+Constructor
 
-**param output:** String 
+***def add_data***: 
 
- ***def preface_reader*** 
+None
 
-      Adds preface to output file
-         
+***def __init__***: 
 
- ***def writer*** 
+Constructor
 
-      Performs all writes
+***def get_tags***: 
 
-**param lines:** List
+None
 
-**param type:** String, w,a 
+***def _get_tags***: 
 
- ***def _files*** 
+Bolds params and attribs
 
-      performs scan on all files
+**:param line:** String
 
-**param path:** String 
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/manager.py***
+
+
+***class Manager***: 
+
+This class manages all files and scanners
+    
+
+***def __init__***: 
+
+Manager Constructor
+
+**:param path:** String
+
+**:param output:** String
+
+***def preface_reader***: 
+
+Adds preface to output file
+        
+
+***def writer***: 
+
+Performs all writes
+
+**:param lines:** List
+
+**:param type:** String, w,a
+
+***def _files***: 
+
+performs scan on all files
+
+**:param path:** String
+
+***def run***: 
+
+None
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/manager.py***
+
+
+***class Manager***: 
+
+This class manages all files and scanners
+    
+
+***def __init__***: 
+
+Manager Constructor
+
+**:param path:** String
+
+**:param output:** String
+
+***def preface_reader***: 
+
+Adds preface to output file
+        
+
+***def writer***: 
+
+Performs all writes
+
+**:param lines:** List
+
+**:param type:** String, w,a
+
+***def _files***: 
+
+performs scan on all files
+
+**:param path:** String
+
+***def run***: 
+
+None
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/transform.py***
+
+
+***def divider***: 
+
+Represents a markdown divider
+
+***def header***: 
+
+Represents a header
+
+***def bold***: 
+
+Bolds 
+    
+
+***def inline***: 
+
+Bolds 
+    
+
+***def bold_regex***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/manager.py***
+
+
+***class Manager***: 
+
+This class manages all files and scanners
+    
+
+***def __init__***: 
+
+Manager Constructor
+
+**:param path:** String
+
+**:param output:** String
+
+***def preface_reader***: 
+
+Adds preface to output file
+        
+
+***def writer***: 
+
+Performs all writes
+
+**:param lines:** List
+
+**:param type:** String, w,a
+
+***def _files***: 
+
+performs scan on all files
+
+**:param path:** String
+
+***def run***: 
+
+None
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/transform.py***
+
+
+***def divider***: 
+
+Represents a markdown divider
+
+***def header***: 
+
+Represents a header
+
+***def bold***: 
+
+Bolds 
+    
+
+***def inline***: 
+
+Bolds 
+    
+
+***def bold_regex***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/manager.py***
+
+
+***class Manager***: 
+
+This class manages all files and scanners
+    
+
+***def __init__***: 
+
+Manager Constructor
+
+**:param path:** String
+
+**:param output:** String
+
+***def preface_reader***: 
+
+Adds preface to output file
+        
+
+***def writer***: 
+
+Performs all writes
+
+**:param lines:** List
+
+**:param type:** String, w,a
+
+***def _files***: 
+
+performs scan on all files
+
+**:param path:** String
+
+***def run***: 
+
+None
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/transform.py***
+
+
+***def divider***: 
+
+Represents a markdown divider
+
+***def header***: 
+
+Represents a header
+
+***def bold***: 
+
+Bolds 
+    
+
+***def inline***: 
+
+Bolds 
+    
+
+***def bold_regex***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/manager.py***
+
+
+***class Manager***: 
+
+This class manages all files and scanners
+    
+
+***def __init__***: 
+
+Manager Constructor
+
+**:param path:** String
+
+**:param output:** String
+
+***def preface_reader***: 
+
+Adds preface to output file
+        
+
+***def writer***: 
+
+Performs all writes
+
+**:param lines:** List
+
+**:param type:** String, w,a
+
+***def _files***: 
+
+performs scan on all files
+
+**:param path:** String
+
+***def run***: 
+
+None
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/transform.py***
+
+
+***def divider***: 
+
+Represents a markdown divider
+
+***def header***: 
+
+Represents a header
+
+***def bold***: 
+
+Bolds 
+    
+
+***def inline***: 
+
+Bolds 
+    
+
+***def bold_regex***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/manager.py***
+
+
+***class Manager***: 
+
+This class manages all files and scanners
+    
+
+***def __init__***: 
+
+Manager Constructor
+
+**:param path:** String
+
+**:param output:** String
+
+***def preface_reader***: 
+
+Adds preface to output file
+        
+
+***def writer***: 
+
+Performs all writes
+
+**:param lines:** List
+
+**:param type:** String, w,a
+
+***def _files***: 
+
+performs scan on all files
+
+**:param path:** String
+
+***def run***: 
+
+None
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/transform.py***
+
+
+***def divider***: 
+
+Represents a markdown divider
+
+***def header***: 
+
+Represents a header
+
+***def bold***: 
+
+Bolds 
+    
+
+***def inline***: 
+
+Bolds 
+    
+
+***def bold_regex***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/manager.py***
+
+
+***class Manager***: 
+
+This class manages all files and scanners
+    
+
+***def __init__***: 
+
+Manager Constructor
+
+**:param path:** String
+
+**:param output:** String
+
+***def preface_reader***: 
+
+Adds preface to output file
+        
+
+***def writer***: 
+
+Performs all writes
+
+**:param lines:** List
+
+**:param type:** String, w,a
+
+***def _files***: 
+
+performs scan on all files
+
+**:param path:** String
+
+***def run***: 
+
+None
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/transform.py***
+
+
+***def divider***: 
+
+Represents a markdown divider
+
+***def header***: 
+
+Represents a header
+
+***def bold***: 
+
+Bolds 
+    
+
+***def inline***: 
+
+Bolds 
+    
+
+***def bold_regex***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/manager.py***
+
+
+***class Manager***: 
+
+This class manages all files and scanners
+    
+
+***def __init__***: 
+
+Manager Constructor
+
+**:param path:** String
+
+**:param output:** String
+
+***def preface_reader***: 
+
+Adds preface to output file
+        
+
+***def writer***: 
+
+Performs all writes
+
+**:param lines:** List
+
+**:param type:** String, w,a
+
+***def _files***: 
+
+performs scan on all files
+
+**:param path:** String
+
+***def run***: 
+
+None
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/transform.py***
+
+
+***def divider***: 
+
+Represents a markdown divider
+
+***def header***: 
+
+Represents a header
+
+***def bold***: 
+
+Bolds 
+    
+
+***def inline***: 
+
+Bolds 
+    
+
+***def bold_regex***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/manager.py***
+
+
+***class Manager***: 
+
+This class manages all files and scanners
+    
+
+***def __init__***: 
+
+Manager Constructor
+
+**:param path:** String
+
+**:param output:** String
+
+***def preface_reader***: 
+
+Adds preface to output file
+        
+
+***def writer***: 
+
+Performs all writes
+
+**:param lines:** List
+
+**:param type:** String, w,a
+
+***def _files***: 
+
+performs scan on all files
+
+**:param path:** String
+
+***def run***: 
+
+None
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/transform.py***
+
+
+***def divider***: 
+
+Represents a markdown divider
+
+***def header***: 
+
+Represents a header
+
+***def bold***: 
+
+Bolds 
+    
+
+***def inline***: 
+
+Bolds 
+    
+
+***def bold_regex***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/manager.py***
+
+
+***class Manager***: 
+
+This class manages all files and scanners
+    
+
+***def __init__***: 
+
+Manager Constructor
+
+**:param path:** String
+
+**:param output:** String
+
+***def preface_reader***: 
+
+Adds preface to output file
+        
+
+***def writer***: 
+
+Performs all writes
+
+**:param lines:** List
+
+**:param type:** String, w,a
+
+***def _files***: 
+
+performs scan on all files
+
+**:param path:** String
+
+***def run***: 
+
+None
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/transform.py***
+
+
+***def divider***: 
+
+Represents a markdown divider
+
+***def header***: 
+
+Represents a header
+
+***def bold***: 
+
+Bolds 
+    
+
+***def inline***: 
+
+Bolds 
+    
+
+***def bold_regex***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/manager.py***
+
+
+***class Manager***: 
+
+This class manages all files and scanners
+    
+
+***def __init__***: 
+
+Manager Constructor
+
+**:param path:** String
+
+**:param output:** String
+
+***def preface_reader***: 
+
+Adds preface to output file
+        
+
+***def writer***: 
+
+Performs all writes
+
+**:param lines:** List
+
+**:param type:** String, w,a
+
+***def _files***: 
+
+performs scan on all files
+
+**:param path:** String
+
+***def run***: 
+
+None
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/manager.py***
+
+
+***class Manager***: 
+
+This class manages all files and scanners
+    
+
+***def __init__***: 
+
+Manager Constructor
+
+**:param path:** String
+
+**:param output:** String
+
+***def preface_reader***: 
+
+Adds preface to output file
+        
+
+***def writer***: 
+
+Performs all writes
+
+**:param lines:** List
+
+**:param type:** String, w,a
+
+***def _files***: 
+
+performs scan on all files
+
+**:param path:** String
+
+***def run***: 
+
+None
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/transform.py***
+
+
+***def divider***: 
+
+Represents a markdown divider
+
+***def header***: 
+
+Represents a header
+
+***def bold***: 
+
+Bolds 
+    
+
+***def inline***: 
+
+Bolds 
+    
+
+***def bold_regex***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***/setup.py***
+
+
+***def readme***: 
+
+Spits out README.rst for our long_description
+with open('README.rst', 'r') as fobj:
+    return fobj.read()
+**********************************************
+**********************************************
+ File @ ***src/main.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/__main__.py***
+
+
+***def menu***: 
+
+The Menu is here
+
+***def main***: 
+
+This is used in the cli and from a couple places
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/data.py***
+
+
+***class File***: 
+
+Represents a python file
+
+***class Data***: 
+
+Represents classes, defs of a python file
+
+***def __init__***: 
+
+Constructor
+
+***def add_data***: 
+
+None
+
+***def __init__***: 
+
+Constructor
+
+***def get_tags***: 
+
+None
+
+***def _get_tags***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+
+***def _get_example***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/__init__.py***
+
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/scanner.py***
+
+
+***class Scanner***: 
+
+scans all python files for attributes
+    
+
+***def __init__***: 
+
+Scanner Constructor
+
+**:param base_path:** String, base of git repo
+
+**:param file:** String, to be parsed
+
+**:param output:** String, place to put README.md
+
+***def get_ast***: 
+
+Get ast obj tree
+        
+
+***def _scan***: 
+
+Performs the scan & adds markdown
+        
+
+***def bold***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/manager.py***
+
+
+***class Manager***: 
+
+This class manages all files and scanners
+    
+
+***def __init__***: 
+
+Manager Constructor
+
+**:param path:** String
+
+**:param output:** String
+
+***def preface_reader***: 
+
+Adds preface to output file
+        
+
+***def writer***: 
+
+Performs all writes
+
+**:param lines:** List
+
+**:param type:** String, w,a
+
+***def _files***: 
+
+performs scan on all files
+
+**:param path:** String
+
+***def run***: 
+
+None
+**********************************************
+**********************************************
+ File @ ***src/pytomd/modules/transform.py***
+
+
+***def divider***: 
+
+Represents a markdown divider
+
+***def header***: 
+
+Represents a header
+
+***def bold***: 
+
+Bolds 
+    
+
+***def inline***: 
+
+Bolds 
+    
+
+***def bold_regex***: 
+
+Bolds params and attribs
+
+**:param line:** String
+
+**:param:** regex: raw String

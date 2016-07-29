@@ -4,7 +4,7 @@
 '''
 from __future__ import absolute_import
 import argparse
-from pytomd.modules.engine import Manager
+from pytomd.modules.manager import Manager
 
 
 def menu():
