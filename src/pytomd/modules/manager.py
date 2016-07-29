@@ -11,18 +11,16 @@ from transform import divider,header,bold,inline,bold_regex
 class Manager(object):
     ''' This class manages all files and scanners
     '''
-    def __init__(self,path,output):
+    def __init__(self,path,options):
         ''' Manager Constructor
         :param path: String
         :param output: String
         '''
-        self.fileObjs = []
+        self.options = options
         self.path = path
-        self.output = output
-        self.files = self._files(self.path)
+        self.output = options.output
         self.preface = self.preface_reader()
         self.writer(self.preface)
-        self._files(self.path)
         self.run()
     
     def preface_reader(self):
@@ -57,25 +55,39 @@ class Manager(object):
                 if '.' in filename:
                     if filename.split('.')[1] == 'py':
                         filepath =  "%s/%s" % (root, filename)
+                        print filepath
                         scn = Scanner(path,filepath,self.output)
                         fileObj = scn._scan()
-                        self.fileObjs.append(fileObj)
-    def run(self):
-        output = []
-        for fileObj in self.fileObjs:
-            output.append("\n%s" % (divider()))
-            output.append("\n%s" % (divider()))
-            output.append("\n File @ %s\n" % (bold(fileObj.name)))
-            for dataObj in fileObj.data:
-                type = dataObj.type
-                name = dataObj.name
-                tags = dataObj.tags
-                fields = dataObj.fields
-                example = dataObj.example
+                        yield fileObj
+
+    def parse_dataObj(self,output,fileObj):
+        for dataObj in fileObj.data:
+            type = dataObj.type
+            name = dataObj.name
+            tags = dataObj.tags
+            fields = dataObj.fields
+            example = dataObj.example
+            if self.options.example:
+                if example:
+                    name_str = "%s %s" % (dataObj.type,dataObj.name)
+                    output.append("\n\n%s:" % (bold(name_str),))
+                    output.append("\n\n%s" % (bold_regex(dataObj.doc)))
+                    output.append("\n%s" % (divider()))
+            else:
                 name_str = "%s %s" % (dataObj.type,dataObj.name)
                 output.append("\n\n%s: " % (bold(name_str),))
                 output.append("\n\n%s" % (bold_regex(dataObj.doc)))
-            self.writer(output,type='a')
+                output.append("\n%s" % (divider()))
+
+    def run(self):
+        output = []
+        for fileObj in self._files(self.path):
+            if not self.options.example:
+                output.append("\n%s" % (divider()))
+                output.append("\n File @ %s\n" % (bold(fileObj.name)))
+                output.append("\n%s\n" % (bold_regex(fileObj.doc)))
+            self.parse_dataObj(output, fileObj)
+        self.writer(output,type='a')
 
 
 

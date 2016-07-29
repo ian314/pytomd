@@ -26,6 +26,11 @@ def menu():
                         dest="execute",
                         default=False,
                         help='execute the values')
+    parser.add_argument('-x',
+                        action="store_true",
+                        dest="example",
+                        default=False,
+                        help='Only output info with examples')
     parser.add_argument('--version',
                         action='version',
                         version='%(prog)s 1.0')
@@ -37,6 +42,6 @@ def main():
     '''
     options = menu()
     if options.execute:
-        m1 = Manager(options.path,options.output)
+        m1 = Manager(options.path,options)
 if __name__ == '__main__':
     main()
