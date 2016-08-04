@@ -18,12 +18,12 @@ def readme():
 setup(
     name='pytomd',
     version='1.0.1',
-    description="python code to README.md",
+    description="Easy python project document generator to github README.md file",
     long_description=readme(),
-    author='ian.itow',
-    author_email='ian.itow@isilon.com',
-    url='',
-    license='',
+    author='Ian Itow',
+    author_email='itow0001@gmail.com',
+    url='https://github.com/itow0001/pytomd',
+    license='MIT',
     classifiers=[
         'Topic :: Software Development :: Build Tools',
         'Programming Language :: Python :: 2.7',
@@ -32,8 +32,6 @@ setup(
     packages=find_packages(SRCDIR),
     zip_safe=False,
     install_requires=[
-        'requests==2.7.0',
-        'PyYAML==3.10'
     ],
     entry_points={
         'console_scripts': ['pytomd = pytomd.__main__:main']
