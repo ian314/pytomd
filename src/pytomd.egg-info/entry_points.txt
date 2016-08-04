@@ -1,3 +1,0 @@
-[console_scripts]
-pytomd = pytomd.__main__:main
-
